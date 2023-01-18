@@ -1,0 +1,9 @@
+This script first uses the if statement to check if the file "/root/updater.sh" exists. If it doesn't exist, it uses the cp command to copy "updater.sh" from the current directory to "/root/".
+Then it checks the exit status of the last command, if it equals to 0 (success) it will print a message to confirm the copy.
+Otherwise, it will print an error message.
+Finally, it echoes the location of the "updater.sh" file, regardless of whether it was copied or already existed in the "/root/" directory.
+
+Then:
+
+This script will check if the file myupdater.service exists in the systemd directory, if it doesn't it will copy the file in the current directory to the systemd directory, enable and start the service. 
+If it already exists it will print that it already exists. At the end of the script it will indicate whether the service has been installed and started successfully or not.

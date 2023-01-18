@@ -1,0 +1,4 @@
+The -t $(lsb_release -cs)-security option tells apt to only install packages from the security repository for the current distribution, which will ignore other updates.
+This script will only upgrade the packages that have a priority of "important" or "critical" and are from the security repository.
+
+Also, consider adding a log mechanism or notifying system administrator when an upgrade is done, in case of any issue or unexpected behaviour.
