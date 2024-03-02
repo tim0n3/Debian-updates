@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-# Function to log messages to stderr and a log file log() {
+# Function to log messages to stderr and a log file 
+log() {
 	local message="$1"
 	local log_file="/var/log/$(date +"%Y-%m-%d_%T")-install-security-updates-util.log"
 
